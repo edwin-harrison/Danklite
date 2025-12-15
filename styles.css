@@ -70,7 +70,7 @@ section + section {
 .nav_hero {
     position: fixed;
     width: 100%;
-    top: -80px;
+    top: -30px;
     left: 0;
     background-color: white;
     z-index: 1000;
