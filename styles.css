@@ -339,8 +339,8 @@ section + section {
 }
 
 .detail-images img {
-    width: 250px;
-    height: 150px;
+    width: 600px;
+    height: 350px;
     object-fit: cover;
     border-radius: 8px;
     cursor: pointer;

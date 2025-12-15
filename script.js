@@ -17,6 +17,7 @@ document.querySelectorAll('.read-more-btn').forEach(button => {
         content.style.display = isVisible ? 'none' : 'block';
         button.textContent = isVisible ? 'Read More' : 'Read Less';
     });
+    
 });
 
 // ================= SMOOTH CAROUSEL WITH PAUSE & SMOOTH ARROWS =================
