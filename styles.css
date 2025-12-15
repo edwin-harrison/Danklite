@@ -5,6 +5,23 @@ body {
     line-height: 1.7;
     color: #0a1a2f;
     background: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+/* Make each main section cover most of the viewport */
+section {
+    min-height: 100vh; /* full viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* vertically center content */
+    align-items: center;    /* horizontally center content */
+    padding: 50px 20px;     /* some internal spacing */
+}
+
+/* Optional: Add spacing between sections */
+section + section {
+    padding-top: 80px; /* space between consecutive sections */
 }
 
 /* ================= BRAND LOGO & TEXT ================= */
