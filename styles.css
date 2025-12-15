@@ -1,0 +1,321 @@
+/* ================= GLOBAL ================= */
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    line-height: 1.7;
+    color: #0a1a2f;
+    background: #fff;
+}
+
+/* Brand */
+.brand-name {
+    font-size: 2rem;
+}
+
+/* BRAND WRAPPER */
+.brand-wrapper {
+    justify-content: flex-start;
+}
+
+/* LOGO */
+.brand-logo {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%; /* makes logo round */
+    object-fit: cover;
+    border: 2px solid #0a1a2f; /* blue-black */
+}
+
+/* BRAND NAME */
+.brand-name {
+    font-size: 2rem;
+    color: #0a1a2f;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+
+    /* Center logo only */
+    .brand-wrapper {
+        justify-content: center;
+    }
+
+    /* Hide brand text on small screens */
+    .brand-name {
+        display: none;
+    }
+}
+
+
+/* ================= HERO ================= */
+/* ================= HERO SECTION ================= */
+.hero-section {
+    position: relative;
+    min-height: 100vh;
+    overflow: hidden;
+    background: #ffffff;
+    padding: 60px 15px;
+}
+
+/* ================= PARALLAX IMAGE ================= */
+.hero-image {
+    position: absolute;
+    right: -100px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    pointer-events: none;
+}
+
+.hero-image img {
+    width: 520px;
+    max-width: 90vw;
+    opacity: 0.12;
+    transition: transform 0.2s ease-out;
+}
+
+/* ================= GLASS CARD ================= */
+.glass-card {
+    position: relative;
+    z-index: 2;
+    max-width: 850px;
+    margin: auto;
+    padding: 60px 40px;
+    border-radius: 20px;
+
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+
+    border: 1px solid rgba(10, 26, 47, 0.25);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* ================= HERO TEXT ================= */
+.hero-title {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: #0a1a2f;
+}
+
+.hero-text {
+    font-size: 1.25rem;
+    color: #000;
+    margin-top: 15px;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 992px) {
+    .hero-title {
+        font-size: 2.6rem;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .hero-image {
+        right: 50%;
+        top: 25%;
+        transform: translateX(50%);
+    }
+
+    .hero-image img {
+        width: 320px;
+        opacity: 0.08;
+    }
+
+    .glass-card {
+        padding: 40px 25px;
+    }
+
+    .hero-title {
+        font-size: 2.2rem;
+    }
+
+    .hero-text {
+        font-size: 1.1rem;
+    }
+}
+
+
+/* ================= SERVICES (VERTICAL) ================= */
+.services-vertical .service-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 120px;
+    position: relative;
+    gap: 30px;
+    height: max-content;
+}
+
+.services-vertical .service-row.reverse {
+    flex-direction: row-reverse;
+}
+
+.service-text {
+    flex: 1;
+    padding: 20px;
+    position: relative;
+}
+
+.service-image {
+    flex: 1;
+    text-align: center;
+}
+
+.service-image img {
+    max-width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.service-text ul {
+    list-style: disc;
+    padding-left: 20px;
+}
+
+/* ================= READ MORE BUTTON ================= */
+.read-more-btn {
+    margin-top: 15px;
+    padding: 8px 15px;
+    border: none;
+    background-color: #2f3031;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* ================= READ MORE CONTENT ================= */
+.read-more-content {
+    display: none; /* hidden by default */
+    margin-top: 15px;
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+/* ================= IMAGE SLIDER ================= */
+.image-slider {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+}
+
+.slider-track {
+    display: flex;
+    gap: 10px;
+}
+
+.slider-track img {
+    min-width: 200px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.slider-track img:hover {
+    transform: scale(1.05);
+}
+.image-slider {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+}
+
+.slider-track {
+    display: flex;
+    gap: 10px;
+    transition: transform 0.3s linear;
+}
+
+.slider-track img {
+    min-width: 200px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.slider-track img:hover {
+    transform: scale(1.05);
+}
+
+/* Navigation arrows */
+.slider-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 35px;
+    height: 35px;
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+}
+
+.slider-arrow.left {
+    left: 10px;
+}
+
+.slider-arrow.right {
+    right: 10px;
+}
+
+.slider-arrow:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+
+/* ================= ABOUT ================= */
+.about-section {
+    background: #f8f9fa;
+}
+
+.about-text {
+    font-size: 1.25rem;
+    max-width: 900px;
+}
+
+/* ================= CONTACT ================= */
+.contact-section {
+    background: #fff;
+}
+
+.contact-text {
+    font-size: 1.2rem;
+}
+
+/* ================= FOOTER ================= */
+.footer {
+    background: #0a1a2f;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 992px) {
+    .hero-title { font-size: 2.6rem; }
+    .section-title { font-size: 2.3rem; }
+}
+
+@media (max-width: 768px) {
+    .hero-section,
+    .services-section,
+    .about-section,
+    .contact-section {
+        min-height: auto;
+        padding: 80px 20px;
+    }
+
+    .hero-title { font-size: 2.2rem; }
+    .hero-text { font-size: 1.1rem; }
+}
