@@ -1,3 +1,14 @@
+// Slide navbar into view on scroll
+window.addEventListener('scroll', () => {
+    const header = document.querySelector('.nav_hero');
+    if (window.scrollY > 50) {
+        header.classList.add('scrolled');
+    } else {
+        header.classList.remove('scrolled');
+    }
+});
+
+
 // ================= READ MORE TOGGLE =================
 document.querySelectorAll('.read-more-btn').forEach(button => {
     button.addEventListener('click', () => {
@@ -91,3 +102,4 @@ document.querySelectorAll('.slider-track img').forEach(img => {
         document.body.appendChild(modal);
     });
 });
+
