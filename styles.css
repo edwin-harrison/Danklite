@@ -9,6 +9,92 @@ body {
     padding: 0;
 }
 
+/* ===== GLOBAL FLUID SCALING ===== */
+html {
+    font-size: clamp(14px, 1.2vw, 18px);
+}
+
+img, video {
+    max-width: 100%;
+    height: auto;
+}
+
+/* ===== FLEX SAFETY ===== */
+.service-row,
+.detail-wrapper {
+    width: 100%;
+    max-width: 1200px;
+    margin-inline: auto;
+}
+
+/* ===== MOBILE FIRST STACKING ===== */
+@media (max-width: 992px) {
+
+    section {
+        min-height: auto;
+        padding: 70px 20px;
+    }
+
+    .service-row,
+    .service-row.reverse {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .service-image img,
+    .detail-images img {
+        width: 100%;
+        height: auto;
+    }
+
+    .glass-card {
+        padding: 35px 20px;
+    }
+}
+
+/* ===== SMALL SCREENS ===== */
+@media (max-width: 576px) {
+
+    .hero-title {
+        font-size: 2rem;
+    }
+
+    .hero-text,
+    .about-text,
+    .contact-text {
+        font-size: 1rem;
+    }
+
+    .read-more-btn {
+        width: 100%;
+    }
+
+    .image-slider,
+    .slider-track img {
+        width: 100%;
+    }
+}
+
+/* ===== LARGE SCREENS ===== */
+@media (min-width: 1400px) {
+    .hero-title {
+        font-size: 4rem;
+    }
+
+    section {
+        padding: 120px 40px;
+    }
+}
+
+/* ===== TOUCH DEVICES ===== */
+@media (hover: none) {
+    .service-details,
+    .read-more-content {
+        display: block;
+    }
+}
+
+
 /* Make each main section cover most of the viewport */
 section {
     min-height: 100vh; /* full viewport height */
