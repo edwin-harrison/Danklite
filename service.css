@@ -1,0 +1,15 @@
+#operational-efficiency-support {
+    position: relative;
+    background-image: url('assets/oE.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+    padding: 40px 20px;
+    margin-top: 20px;
+    color: #fff; /* text color for readability */
+}
+
+#operational-efficiency-support .detail-text {
+    background-color: rgba(0, 0, 0, 0.6); /* semi-transparent overlay for readability */
+    border-radius: 10px;
+}
