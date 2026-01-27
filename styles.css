@@ -245,14 +245,7 @@ section + section {
 }
 
 /* ================= PARALLAX IMAGE ================= */
-.hero-image {
-    position: absolute;
-    right: -100px;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 1;
-    pointer-events: none;
-}
+
 
 .hero-image img {
     width: 520px;
